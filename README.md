@@ -13,44 +13,39 @@
 
 # Programming
 
-  - สร้าง method ใน Person class เพื่อหา friends of friends
+  ### Simple Wallet Api
 
+  **Description**
+  
+  You need to create simple wallet api for transfer cryptocurrency between user A to user B. Also have admin ability to manage both cryptocurrency and exchange rate.
 
-  > **example:**
+  **Requirement**
+
+  - Admin can increase and decrease user cryptocurrency balance.
+  - Admin can see all total balance of all cryptocurrency.
+  - Admin can add other cryptocurrency such XRP, EOS, XLM to wallet.
+  - Admin can manage exchange rate between cryptocurrency.
+  - User can transfer cryptocurrency to other.
+  - User can transfer cryptocurrency to other with difference currency such ETH to BTC with exchange rate.
+  > Example
   >
-  > B เป็นเพื่อนของ A และ C เป็นเพื่อนของ B แล้ว C คือ friends of friends ของ A
-  >
-  > `(A) <-> (B) <-> (C)`
+  > User A transfer 1000 ETH to User B with exchange rate ETH/BTC equal to 0.05 so UserB will recieve 50 BTC
+  - It ok whether cryptocurrency have decimal or not.
 
+  **Technical Detail**
+  - This API need to be written with Nodejs.
+  - You can use any nodejs web framework but we prefer [express](https://expressjs.com/).
+  - You can use any tool or library to help you build API. 
+  - Database we prefer mariadb, but if you think other database is suitable it fine to use that db.
+  - This is **not** decentralized wallet so no need to worry about blockchain stuff.
+  
   **Bonus**
-  - TDD 
-  
-  **Hint**
-  - ให้ใช้ Node.js (Javascript) ในการทำโจทย์เท่านั้น โดยห้ามลง lib เพิ่มเติม
-  - Syntax ไม่ต้องถูกต้อง 100% ก็ได้
-  - แก้ไข code ได้ทั้ง class ไม่จำกัดแค่ method
-  - ถ้า A เป็นเพื่อนของ B แล้ว B ก็เป็นเพื่อนของ A ด้วย `(A) <-> (B)` 
-  - เพื่อนของ A ต้องไม่เป็น เพื่อนของเพื่อนของ A ตัวอย่างเช่น 
-    > - B เป็นเพื่อนของ A `(A) <-> (B)`
-    > - D เป็นเพื่อนของ B และ A `(A) <-> (D)`, `(B) <-> (D)`
-    > - ดั้งนั้น D ต้องไม่เป็นเพื่อนของเพื่อนของ A
-    > - ![Alt text](https://fs.chomchob.com/file/image?path=/admin/upload/2018-06-08/dfd301fb-a2e7-43b1-addb-d119ac2a3e02)
-  ```js
-  class Person {
-  
-    constructor() {
-      this.name = ''
-      this.friends = []
-      // variable เพิ่มเติม(ถ้ามี) ...
-    }
+  - TDD
+  - Deploy to cloud such as aws or gcp.
 
-    friendsOfFriends() {
-      return [] // array ชื่อเพื่อนของเพื่อนทั้งหมด
-    }
 
-    // method เพิ่มเติม(ถ้ามี) ...
-  }
-  ```
+  > - ![Alt text](https://fs.chomchob.com/file/image?path=/admin/upload/2018-06-08/dfd301fb-a2e7-43b1-addb-d119ac2a3e02)
+  
 
 
 ---
