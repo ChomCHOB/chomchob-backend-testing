@@ -1,4 +1,4 @@
-# chomchob-backend-testing
+# Chomchob Backend Testing
 
 This test contain with 2 part
 
@@ -100,5 +100,5 @@ this provide for customer who want to buy code for using in game.
   
   **Hint2**
 
-  - You can see database part in [thai language](THAI_DB.md) for better understanding.
+  - You can see database part in [thai language](translate/THAI_DB.md) for better understanding.
 
