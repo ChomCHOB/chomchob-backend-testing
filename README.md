@@ -1,13 +1,14 @@
 # chomchob-backend-testing
 
-โจทย์จะมี 2 Part คือ
+This test contain with 2 part
+
 1. [Programming](#programming)
 2. [Database](#database)
 
 ---
 
 # Note
-- มีเวลาทำโจทย์ 7 วันหลังจากได้รับ email 
+- You have 7 day after receive email to complete this test.
 
 ---
 
@@ -38,39 +39,35 @@
   - You can use any tool or library to help you build API. 
   - Database we prefer mariadb, but if you think other database is suitable it fine to use that db.
   - This is **not** decentralized wallet so no need to worry about blockchain stuff.
+  - If some of detail or requirement are ambiguous, we so sorry about that. And feel free to use your creative thinking to do that stuff.
   
   **Bonus**
   - TDD
   - Deploy to cloud such as aws or gcp.
 
 
-  > - ![Alt text](https://fs.chomchob.com/file/image?path=/admin/upload/2018-06-08/dfd301fb-a2e7-43b1-addb-d119ac2a3e02)
-  
-
-
 ---
 
 # Database
 
-สมมติสถานการณ์ว่า 
-คุณได้รับมอบหมายให้ออกแบบ Database ของระบบขาย code item สำหรับเกมต่างๆ 
-ซึ่งคอยให้บริการแก่ลูกค้าที่ต้องการเข้ามาซื้อ code ไปเติมในเกม
 
-  **โดยมีรายละเอียดดังนี้**
+You have assign to design Database for sale item code system for game
+this provide for customer who want to buy code for using in game.
+
+  **Detail**
   
-  - item ที่ขายจะต้องมี ชื่อสินค้า, รายละเอียดสินค้า, ราคาขาย, วันที่เปิดขาย, วันที่เลิกขาย
-  - เมื่อลูกค้าซื้อ Item แล้วจะได้รับเป็น code (โดย code อาจถูกบันทึกไว้ล่วงหน้า หรือ อาจถูกสร้างหลังจากซื้อ ก็ได้)
-  - item สามารถจัดโปรโมชั่นลดราคาในช่วงเวลาที่กำหนดได้ เช่น ปกติ ราคา 150 บาท จัดโปรเดือนมกราคม ลดราคาเป็น 100 บาท
+  - Item for sale must have product name, product detail, sale price, open sale date, end sale date.
+  - When customer already bought an item, customer will receive code (code can be created or create after bought).
+  - item have a discount promotion period with specific date time for example normal price is 150 baht and have a promotion on January and set discounted price to 100 baht.
 
   **Bonus**
 
-  - item เป็นแบบ shared stock (ไม่ว่าซื้อ item ในราคาไหนจะต้องใช้ stock ของ code ที่เดียวกัน) เช่น มี ไอเท็ม A และ ไอเท็ม B อยู่ในระบบ หากมีลูกค้ามาทำการซื้อ A หรือ B ก็ตาม code ที่ลูกค้าได้รับ จะถูกดึงมาจาก stock เดียวกัน
-  - item อาจถูกขายแบบ Bundle เช่น ขาย สกินตัวละครพร้อมกันสองตัวในราคาพิเศษ  หรือขาย กล่องสุ่มไอเท็ม 5 กล่อง ในราคาถูกกว่าปกติ
+  - Item type shared stock (no matter how you buy item on which price, it suppose to use code on same stock) for example, have an item A and B on system when it sold either item A or item B, code that customer will receive come from same stock.
+  - item may sale in bundle type for example sale two difference character skin set in special price or sale five gachapon box (for random item) in special price.
 
   **Hint**
 
-  - สร้าง database ในรูปแบบของ model จาก ["sequelize"](https://github.com/sequelize/sequelize)
-
+  - Create database in form of model from [sequelize](https://github.com/sequelize/sequelize)
   
   **Example Model**
 
@@ -100,4 +97,8 @@
     }
   })
   ```
+  
+  **Hint2**
+
+  - You can see database part in [thai language](THAI_DB.md) for better understanding.
 
