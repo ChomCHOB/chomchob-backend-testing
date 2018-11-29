@@ -1,6 +1,12 @@
 # Chomchob Backend Testing
 
-This test contain with 2 part
+Thank you for interest in ChomCHOB
+
+We have 2 part for testing your coding skill.
+When you done this task you need to created repository like in "example submission" folder on your github repository.
+Then, send your repository link to support@chomchob.com with subject Backend Engineer Application (2018).
+
+This test contain with 2 part.
 
 1. [Programming](#programming)
 2. [Database](#database)
@@ -72,6 +78,7 @@ this provide for customer who want to buy code for using in game.
   **Example Model**
 
   ```js
+  // Store User
   const User = sequelize.define('User', {
     id: Sequelize.INTEGER,
     name: Sequelize.STRING,
@@ -84,6 +91,7 @@ this provide for customer who want to buy code for using in game.
     }
   })
 
+  // Store User credit card 
   const UserCard = sequelize.define('UserCard', {
     id: Sequelize.STRING,
     user_id: Sequelize.STRING,
