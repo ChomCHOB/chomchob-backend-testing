@@ -4,7 +4,7 @@ Thank you for interest in ChomCHOB
 
 We have 2 part for testing your coding skill.
 When you done this task you need to created repository like in "example submission" folder on your github repository.
-Then, send your repository link to support@chomchob.com with subject Backend Engineer Application (2018).
+Then, send your repository link to support@chomchob.com with subject Backend Engineer Application.
 
 This test contain with 2 part.
 
@@ -68,7 +68,6 @@ this provide for customer who want to buy code for using in game.
 
   **Bonus**
 
-  - Item type shared stock (no matter how you buy item on which price, it suppose to use code on same stock) for example, have an item A and B on system when it sold either item A or item B, code that customer will receive come from same stock.
   - item may sale in bundle type for example sale two difference character skin set in special price or sale five gachapon box (for random item) in special price.
 
   **Hint**
